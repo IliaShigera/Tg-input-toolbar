@@ -1,0 +1,57 @@
+/* Main app container */
+.app {
+}
+
+.app__container {
+}
+
+/* Chat container */
+.chat {
+}
+
+/* Chat header */
+.chat__header {
+}
+
+.chat__header-info {
+}
+
+.chat__header-ava {
+}
+
+.chat__header-title {
+}
+
+.chat__header-subs {
+}
+
+/* Chat messages */
+.chat__messages {
+}
+
+/* Message bubble */
+.message {
+}
+
+.message--received {
+}
+
+.message__content-text {
+}
+
+.message__meta-time {
+}
+
+/* Chat input */
+.chat__input {
+}
+
+.chat__emoji-picker,
+.chat__file-pin {
+}
+
+.chat__input-field {
+}
+
+.chat__input-field[contenteditable="true"]:empty:before {
+}
