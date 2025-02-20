@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/toolbar.css" />
 
     <link
       rel="stylesheet"
@@ -33,11 +34,11 @@
           <div class="chat__messages">
             <div class="message message--received">
               <div class="message__content">
-                <div class="message__content-text">Hello world!</div>
+                <div class="message__content-text" tabindex="0"></div>
                 <!-- <div class="message__content-media"></div> -->
               </div>
               <div class="message__meta">
-                <div class="message__meta-time">5:00AM</div>
+                <div class="message__meta-time"></div>
               </div>
             </div>
           </div>
@@ -48,13 +49,29 @@
             <div
               class="chat__input-field"
               contenteditable="true"
-              placeholder="Message..."
-            >
-              Message
-            </div>
+              data-placeholder="Message..."
+            ></div>
             <div class="chat__file-pin">$</div>
           </div>
         </div>
+      </div>
+      <script type="module" src="./src/js/app.js"></script>
+    </div>
+
+    <div class="text-toolbar" id="textToolbar">
+      <button class="toolbar-btn" tool-cmd="bold"><strong>B</strong></button>
+      <button class="toolbar-btn" tool-cmd="italic"><em>I</em></button>
+      <button class="toolbar-btn" tool-cmd="underline"><u>U</u></button>
+      <button class="toolbar-btn" tool-cmd="strikethrough"><s>S</s></button>
+      <button class="toolbar-btn" tool-cmd="insertLink">🔗</button>
+    </div>
+
+    <div class="emoji-picker-container" id="emojiPickerContainer" hidden>
+      <div class="emoji-picker-header">
+      </div>
+      <div class="emoji-picker-grid">
+      </div>
+      <div class="emoji-picker-footer">
       </div>
     </div>
   </body>
